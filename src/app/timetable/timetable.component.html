@@ -1,0 +1,13 @@
+<table class="table table-inverse">
+  <thead>
+    <tr>
+      <th></th>
+      <th *ngFor='let day of days'>{{day.name}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let timeslot of timeslots'>
+      <th scope="row">{{timeslot.fromTime}} - {{timeslot.toTime}}</th>
+    </tr>
+  </tbody>
+</table>

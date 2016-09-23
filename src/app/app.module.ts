@@ -5,14 +5,35 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { DatepickerModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { ModalModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { DropdownModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { TimepickerModule } from 'ng2-bootstrap/ng2-bootstrap';
+import { ButtonComponent } from './button/button.component';
+import { PopupComponent } from './popup/popup.component';
+import { ModalButtonComponent } from './modal-button/modal-button.component';
+import { TimetableComponent } from './timetable/timetable.component';
+import { Day } from './day.directive';
+import { TimeslotOverlayComponent } from './timeslot-overlay/timeslot-overlay.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ButtonComponent,
+    PopupComponent,
+    ModalButtonComponent,
+    TimetableComponent,
+    Day,
+    TimeslotOverlayComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    DatepickerModule,
+    ModalModule,
+    DropdownModule,
+    TimepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
